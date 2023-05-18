@@ -45,7 +45,7 @@ function upgrade_oh_my_zsh_custom() {
     printf "${BLUE}%s${NORMAL}\n" "Upgrading Custom Plugins"
   fi
 
-  find -L "${ZSH_CUSTOM}" -type d -name .git | while read d
+  find -L "${ZSH_CUSTOM}" -type f -name .git | while read d
   do
     p=$(dirname "$d")
     pn=$(basename "$p")
