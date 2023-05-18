@@ -1,13 +1,15 @@
 autoupdate-zsh-plugin
 ====================
 
+Only use this if you use git submodules to install ZSH Custom Plugins.
+
 [oh-my-zsh plugin](https://github.com/robbyrussell/oh-my-zsh) for auto updating of git-repositories in $ZSH_CUSTOM folder
 
 ## Install
 
-Create a new directory in `$ZSH_CUSTOM/plugins` called `autoupdate` and clone this repo into that directory. Note: it must be named `autoupdate` or oh-my-zsh won't recognize that it is a valid plugin directory.
+cd into `$ZSH_CUSTOM/plugins` and add this repo as submodule.
 ```
-git clone https://github.com/TamCore/autoupdate-oh-my-zsh-plugins $ZSH_CUSTOM/plugins/autoupdate
+git submodule add -f https://github.com/Dave4272-Office/autoupdate-oh-my-zsh-plugins.git autoupdate
 ```
 
 ## Usage
